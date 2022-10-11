@@ -1,3 +1,4 @@
+require("./config/mongo")
 const { log } = require("console");
 const express = require("express");
 const nodemon = require("nodemon");
