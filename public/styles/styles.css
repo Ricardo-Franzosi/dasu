@@ -1,0 +1,81 @@
+
+.container {
+    font-family: "Ubuntu", sans-serif;
+    background-image: url("./images/DASUTEN1-e1472492563560.jpg");
+  }
+  
+  header {
+    margin-top: 2em;
+    font-size: xx-large;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5%;
+    width: 600px;
+    height: 400px;
+    padding: 2em 0;
+    background: linear-gradient(rgba(100, 149, 237, 0.5),
+        rgba(69, 69, 73, 0.747));
+    box-shadow: 3px 3px 10px black;
+  }
+  
+  input,
+  textarea {
+    border: none;
+    box-shadow: 4px 8px 10px black;
+    margin: 0.6em 0;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+    width: 400px;
+  }
+  
+  input[type="submit"] {
+    background: rgb(95, 158, 160);
+  }
+  
+  input[type="submit"]:hover {
+    transform: scale(1.05);
+  }
+  
+  input[type="submit"]:active {
+    transform: scale(0.95);
+    box-shadow: 1px 2px 10px black;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    color: aquamarine;
+  }
+  
+  @media only screen and (max-width: 576px) {
+    header {
+      font-size: large;
+    }
+  
+    form {
+      width: 95vw;
+    }
+  
+    input,
+    textarea {
+      line-height: 1.3em;
+      max-width: 90vw;
+    }
+  }
