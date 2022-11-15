@@ -1,13 +1,20 @@
- 
-<div class="container text-white">
+<div class="container mt-5 text-white bgImg">
   <div class="row">
-   
-    <form  action="/users/login" method="POST">
-      <div>
-        <label for="user" class="form-label">Email</label>
-        <input name="email" type="text" class="form-control" id="email" autocomplete="username" autofocus>
+
+    <form action="/users/register" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input name="name" type="text" class="form-control" id="name" autocomplete="name" autofocus>
       </div>
-      <div>
+      <div class="mb-3">
+        <label for="lastName" class="form-label">Lastname</label>
+        <input name="lastName" type="text" class="form-control" id="lastName" autocomplete="additional-name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input name="email" type="text" class="form-control" id="email" autocomplete="email">
+      </div>
+      <div class="mb-3">
         <label for="pass" class="form-label">Password</label>
         <input name="pass" type="password" class="form-control" id="pass" autocomplete="current-password">
       </div>
@@ -24,10 +31,12 @@
         </div>
       </div>
       {{/if}}
-      <div class="d-flex justify-content-between">
-        <input type="submit" class="btn btn-success " value="acceder con mail y pass" />
-        <a href="/users/register" class="btn btn-success"> "No estoy registrado" </a>
+       <div class="d-flex justify-content-between">
+        <input type="submit" class="btn btn-success " value="Registre mi usuario" />
+        <a href="/users/login" class="btn btn-warning" >Volver para Login</a>
+       
       </div>
   </div>
   </form>
+  
 </div>

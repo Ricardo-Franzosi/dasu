@@ -9,4 +9,4 @@ const decrypt = async (pass, hashedPass) => {
   return await bcrypt.compare(pass, hashedPass); //true o false
 };
 
-module.exports = { encrypt, decrypt }
+module.exports = { encrypt, decrypt }   
